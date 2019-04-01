@@ -1,0 +1,30 @@
+.pagination {
+    margin-top: 20px;
+}
+
+.pagination__item a {
+    color: #131f31;
+    padding: 8px 16px;
+    transition: background-color .1s;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 11px;
+    
+    &:hover:not(.active) {
+        background-color: #ddd;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        text-decoration: none;
+        color: #131f31;
+    }
+}
+
+.pagination__item a.active {
+    background-color: #f7580f;
+    color: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+
+}
