@@ -33,7 +33,7 @@ gulp.task('server', ['styles', 'html'], function() {
 });
 
 gulp.task('styles', function() {
-	return gulp.src('./app/less/main.less', './app/less/main_item.less')
+	return gulp.src('./app/less/main.less')
 	.pipe(plumber({
 		errorHandler: notify.onError(function(err){
 			return {
